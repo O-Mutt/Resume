@@ -1,0 +1,63 @@
+
+body {
+    font-size: 16pt;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* flex */
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-right {
+    justify-content: flex-end;
+}
+
+.center-items {
+    align-items: center;
+}
+
+/* padding */
+.padding-left-medium {
+    padding-left: 1.5em;
+}
+
+.padding-left-right-large {
+    padding: 0 3em;
+}
+
+.margin-negative-top {
+    margin-top: -1ex;
+}
+
+.margin-top-zero {
+    margin-top: 0;
+}
+
+
+.horizontal-break {
+    background: linear-gradient(55deg, rgb(128, 128, 128) 50%, rgb(192, 192, 192) 50%);
+    flex-grow: 1;
+
+}
+
+/* section */
+section divider {
+    font-family: 'Nova Flat', cursive;
+}

@@ -1,0 +1,36 @@
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.nova-flat { 
+    font-family: 'Nova Flat', cursive;
+}
+
+.gravitas-one {
+    font-family: 'Gravitas One', cursive;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.lobster {
+    font-family: 'Lobster', cursive;
+}
+
+.text-large {
+    font-size: 2.75em;
+}
+
+.text-medium {
+    font-size: 1.25em;
+}
+
+.text-small {
+    font-size: .75em;
+}
+
+.no-link {
+    text-decoration: none;
+}

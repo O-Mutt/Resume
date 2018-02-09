@@ -1,0 +1,43 @@
+subsection {
+    display: flex;
+}
+subsection roles {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2ex;
+}
+
+subsection roles role {
+    font-family: 'Nova Flat', cursive;
+    font-weight: bold;
+}
+
+subsection role dates {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+subsection company {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+subsection company name {
+    font-family: 'Nova Flat', cursive;
+    font-weight: bold;
+}
+
+subsection company location {
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+}
+
+responsibilities ul {
+    margin: 0;
+}
