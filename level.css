@@ -8,6 +8,7 @@ level span {
 }
 
 level ul {
+    flex-wrap: wrap;
     list-style: none;
     display: flex;
     margin: 0 0 .25ex 0;
