@@ -45,15 +45,14 @@ responsibilities ul {
 
 @media (max-width: 768px) {
     subsection {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     subsection roles {
-        margin-bottom: 0;
+        margin-bottom: 3ex;
     }
 
     subsection company {
         align-items: flex-start;
-        margin-bottom: 3ex;
     }
 }
