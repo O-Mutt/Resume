@@ -2,21 +2,6 @@ subsection {
     display: flex;
 }
 
-@media (max-width: 768px) {
-    subsection {
-        flex-direction: column;
-    }
-
-    subsection roles {
-        margin-bottom: 0;
-    }
-
-    subsection company {
-        align-items: flex-start;
-        margin-bottom: 3ex;
-    }
-}
-
 subsection roles {
     flex: 5;
     display: flex;
@@ -56,4 +41,19 @@ subsection company location {
 
 responsibilities ul {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    subsection {
+        flex-direction: column;
+    }
+
+    subsection roles {
+        margin-bottom: 0;
+    }
+
+    subsection company {
+        align-items: flex-start;
+        margin-bottom: 3ex;
+    }
 }
