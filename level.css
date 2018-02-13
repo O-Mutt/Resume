@@ -18,3 +18,9 @@ level ul li {
     padding: 0 1ex;
     flex: none;
 }
+
+@media (max-width: 992px) {
+    level {
+        flex-direction: column;
+    }
+}

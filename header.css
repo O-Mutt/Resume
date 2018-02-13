@@ -1,0 +1,9 @@
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+header h1 {
+    margin: 0;
+}
