@@ -1,0 +1,26 @@
+level {
+    font-size: 14pt;
+    display: flex;
+}
+
+level span {
+    font-family: 'Nova Flat', cursive;
+}
+
+level ul {
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    margin: 0 0 .25ex 0;
+    padding: 0;
+}
+level ul li {
+    padding: 0 1ex;
+    flex: none;
+}
+
+@media (max-width: 992px) {
+    level {
+        flex-direction: column;
+    }
+}
