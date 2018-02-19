@@ -10,13 +10,4 @@
     .text-large {
         font-size: 2.5em;
     }
-
-    print-page-break {
-        display: block;
-        page-break-after: always;
-    }
- }
-
- print-page-break {
-     display: none;
  }
