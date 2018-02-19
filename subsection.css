@@ -20,7 +20,6 @@ subsection role dates {
     font-weight: normal;
 }
 
-
 subsection company {
     flex: 2;
     display: flex;
@@ -43,15 +42,13 @@ responsibilities ul {
     margin: 0;
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     subsection {
         flex-direction: column-reverse;
     }
-
     subsection roles {
         margin-bottom: 3ex;
     }
-
     subsection company {
         align-items: flex-start;
     }
