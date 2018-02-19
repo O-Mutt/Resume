@@ -6,7 +6,7 @@ subsection roles {
     flex: 5;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2ex;
+    margin-bottom: .5ex;
 }
 
 subsection roles role {
@@ -47,7 +47,7 @@ responsibilities ul {
         flex-direction: column-reverse;
     }
     subsection roles {
-        margin-bottom: 3ex;
+        margin-bottom: .5ex;
     }
     subsection company {
         align-items: flex-start;
