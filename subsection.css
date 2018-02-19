@@ -30,6 +30,7 @@ subsection company {
 subsection company name {
     font-family: 'Nova Flat', cursive;
     font-weight: bold;
+    text-align: right;
 }
 
 subsection company location {
