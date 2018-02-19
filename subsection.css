@@ -1,4 +1,5 @@
 subsection {
+    page-break-inside: avoid;
     display: flex;
 }
 
