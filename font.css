@@ -19,6 +19,10 @@
     font-family: 'Lobster', cursive;
 }
 
+.lora {
+    font-family: 'Lora', serif;
+}
+
 .text-large {
     font-size: 275%;
 }
