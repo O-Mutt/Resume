@@ -34,10 +34,15 @@ subsection company name {
     text-align: right;
 }
 
-subsection company location {
+subsection company location,
+subsection company overalldates {
     font-style: italic;
     font-weight: normal;
     font-family: 'Lato', sans-serif;
+}
+
+subsection company overalldates {
+    font-size: 75%;
 }
 
 responsibilities ul {
