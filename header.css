@@ -4,6 +4,14 @@
     }
 }
 
+.padding-right-large {
+    padding-right: 7px;
+}
+
+.padding-left-large {
+    padding-left: 7px;
+}
+
 header h1 {
     margin: 0;
 }

@@ -1,6 +1,7 @@
 subsection {
     page-break-inside: avoid;
     display: flex;
+    padding: 0 5px;
 }
 
 subsection roles {
