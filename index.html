@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico|Nova+Flat|Material+Icons|Gravitas+One|Lobster|Crimson+Text"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Nova+Flat|Material+Icons|Gravitas+One|Lobster|Crimson+Text" rel="stylesheet">
+    <link href="layout.css" rel="stylesheet" />
+    <link href="color.css" rel="stylesheet" />
+    <link href="padding.css" rel="stylesheet" />
+    <link href="font.css" rel="stylesheet" />
+    <link href="border.css" rel="stylesheet" />
+    <link href="level.css" rel="stylesheet" />
+    <link href="subsection.css" rel="stylesheet" />
+    <link href="download_clicker.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="name.css" rel="stylesheet" />
 
-    <link href="layout.css" rel="stylesheet">
-    <link href="color.css" rel="stylesheet">
-    <link href="padding.css" rel="stylesheet">
-    <link href="font.css" rel="stylesheet">
-    <link href="border.css" rel="stylesheet">
-    <link href="level.css" rel="stylesheet">
-    <link href="subsection.css" rel="stylesheet">
-    <link href="download_clicker.css" rel="stylesheet">
-    <link href="header.css" rel="stylesheet">
-    <link href="name.css" rel="stylesheet">
+    <link href="print.css" rel="stylesheet" />
+  </head>
+  <title>Matt O'Keefe ~(M)</title>
 
-    <link href="print.css" rel="stylesheet">
-</head>
-<title>Matt Erickson (ME)</title>
-
-<body id="page">
+  <body id="page">
     <!--
         Hello, welcome to my html source. It isn't pretty but it makes the maintenance of my resume a WHOLE lot easier.
         If you are reading this I probably want to talk to you as much as I hope you will want to talk to me.
-        At this point you can probably just refer to my github repo to view this: https://github.com/MutMatt/Resume... 
+        At this point you can probably just refer to my github repo to view this: https://github.com/O-Mutt/Resume... 
         it would, for sure, be easier to see there. Added bonus, you can see how this all came to be through the commit history!
 
         I know what you are thinking "these sections and pieces could easily be a react/angular/backbone/vue component and read in a json file
@@ -32,428 +34,540 @@
         tell me that printing an html doc in the past has ever looked THAT clean with the amount of 'print' css I have...
     -->
     <header class="background-gray flex">
-        <div class="flex flex-column flex-grow padding-left-large">
-            <h1 class="lobster name">Matthew Erickson</h1>
-            <h3 class="nova-flat text-light-gray text-small margin-top-zero">647 Ashland Avenue, Saint Paul MN, 55104</h3>
+      <div class="flex flex-column flex-grow padding-left-large">
+        <h1 class="lobster name">Matthew O'Keefe</h1>
+        <h3 class="nova-flat text-light-gray text-small margin-top-zero">
+          647 Ashland Avenue, Saint Paul MN, 55104
+        </h3>
+      </div>
+      <div class="horizontal-break flex-column"></div>
+      <div
+        class="
+          flex flex-column flex-grow
+          padding-right-large
+          flex-center
+          background-lighter-gray
+        "
+      >
+        <div class="flex flex-right center-items">
+          <i class="material-icons text-gray">phone</i>
+          <h2 class="nova-flat text-small">
+            &nbsp;
+            <a class="text-gray no-link" href="tel:+16513220091"
+              >651.322.0091</a
+            >
+          </h2>
         </div>
-        <div class="horizontal-break flex-column"></div>
-        <div class="flex flex-column flex-grow padding-right-large flex-center background-lighter-gray">
-            <div class="flex flex-right center-items">
-                <i class="material-icons text-gray">phone</i>
-                <h2 class="nova-flat text-small">&nbsp;
-                    <a class="text-gray no-link" href="tel:+17632671595">763.267.1595</a>
-                </h2>
-            </div>
-            <div class="flex flex-right center-items">
-                <i class="material-icons text-gray">email</i>
-                <h2 class="nova-flat text-small">&nbsp;
-                    <a class="text-gray no-link" href="mailto:matt@matterickson.me">Matt@MattErickson.ME</a>
-                </h2>
-            </div>
-            <div class="flex flex-right center-items">
-                <i class="material-icons text-gray">web</i>
-                <h2 class="nova-flat text-small">&nbsp;
-                    <a class="text-gray no-link" href="https://matterickson.me">https://MattErickson.ME</a>
-                </h2>
-            </div>
+        <div class="flex flex-right center-items">
+          <i class="material-icons text-gray">email</i>
+          <h2 class="nova-flat text-small">
+            &nbsp;
+            <a class="text-gray no-link" href="mailto:matt@OKeefe.dev"
+              >Matt@OKeefe.dev</a
+            >
+          </h2>
         </div>
+        <div class="flex flex-right center-items">
+          <i class="material-icons text-gray">web</i>
+          <h2 class="nova-flat text-small">
+            &nbsp;
+            <a class="text-gray no-link" href="https://OKeefe.dev"
+              >https://OKeefe.dev</a
+            >
+          </h2>
+        </div>
+      </div>
     </header>
 
     <section>
-        <divider class="flex border-top border-bottom background-lighter-gray text-gray text-medium">
-            Technical Skills
-        </divider>
-        <level>
-            <span>
-                <strong>Proficient:</strong>&nbsp;
-            </span>
-            <ul>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>WebApi</li>
-                <li>HTML/CSS</li>
-                <li>Java/J2EE</li>
-            </ul>
-        </level>
-        <level>
-            <span>
-                <strong>Familiar:</strong>&nbsp;
-            </span>
-            <ul>
-                <li>DevOps</li>
-                <li>Continuous Integration</li>
-                <li>WebForms</li>
-                <li>Powershell</li>
-                <li>OAuth</li>
-                <li>PHP</li>
-                <li>SAML</li>
-                <li>JSP</li>
-                <li>Bash</li>
-                <li>Struts/Struts2</li>
-                <li>Android SDK</li>
-                <li>Ruby (on Rails)</li>
-            </ul>
-        </level>
-        <level>
-            <span>
-                <strong>Source control:</strong>&nbsp;
-            </span>
-            <ul>
-                <li>TFS</li>
-                <li>Git (BitBucket, Github, GitLabs)</li>
-                <li>Svn</li>
-            </ul>
-        </level>
-        <level>
-            <span>
-                <strong>Database:</strong>&nbsp;
-            </span>
-            <ul>
-                <li>MsSql</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>Mongo</li>
-            </ul>
-        </level>
-        <level>
-            <span>
-                <strong>Documentation:</strong>&nbsp;
-            </span>
-            <ul>
-                <li>Swagger/Swashbuckle</li>
-                <li>Visio</li>
-                <li>Excel</li>
-            </ul>
-        </level>
+      <divider
+        class="
+          flex
+          border-top border-bottom
+          background-lighter-gray
+          text-gray text-medium
+        "
+      >
+        Technical Skills
+      </divider>
+      <level>
+        <span> <strong>Proficient:</strong>&nbsp; </span>
+        <ul>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>C#</li>
+          <li>WebApi</li>
+          <li>HTML/CSS</li>
+          <li>Java/J2EE</li>
+        </ul>
+      </level>
+      <level>
+        <span> <strong>Familiar:</strong>&nbsp; </span>
+        <ul>
+          <li>DevOps</li>
+          <li>Continuous Integration</li>
+          <li>WebForms</li>
+          <li>Powershell</li>
+          <li>OAuth</li>
+          <li>PHP</li>
+          <li>SAML</li>
+          <li>JSP</li>
+          <li>Bash</li>
+          <li>Struts/Struts2</li>
+          <li>Android SDK</li>
+          <li>Ruby (on Rails)</li>
+        </ul>
+      </level>
+      <level>
+        <span> <strong>Source control:</strong>&nbsp; </span>
+        <ul>
+          <li>Git (Github, BitBucket, GitLabs)</li>
+          <li>TFS</li>
+          <li>Svn</li>
+        </ul>
+      </level>
+      <level>
+        <span> <strong>Database:</strong>&nbsp; </span>
+        <ul>
+          <li>Mongo</li>
+          <li>MsSql</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+        </ul>
+      </level>
+      <level>
+        <span> <strong>Documentation:</strong>&nbsp; </span>
+        <ul>
+          <li>Swagger/Swashbuckle</li>
+          <li>Visio</li>
+          <li>Excel</li>
+        </ul>
+      </level>
     </section>
 
     <section>
-        <divider class="flex border-top border-bottom background-lighter-gray text-gray text-medium">
-            Experience
-        </divider>
+      <divider
+        class="
+          flex
+          border-top border-bottom
+          background-lighter-gray
+          text-gray text-medium
+        "
+      >
+        Experience
+      </divider>
 
-        <subsection>
-            <roles>
-                <role>Technical Development Lead &amp; Software Architect
-                    <dates>(September 2016 - August 2018)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Successfully collaborate with Hallmark teams to coordinate understanding and efforts on major initiatives including:
-                            <ul>
-                                <li>
-                                    Implementation of an analytics to improve understanding of application usage
-                                </li>
-                                <li>
-                                    Automation of build and deployment processes, including code quality metrics
-                                </li>
-                                <li>
-                                    Simplification of applications into deployable micro-services to significantly minimize downtime
-                                </li>
-                                <li>
-                                    Implementation of a new source control branch strategy to increase developer productivity
-                                </li>
-                                <li>
-                                    Design of code review process to improve code quality outcomes
-                                </li>
-                                <li>
-                                    Lead multiple multi-sprint technical projects to move the overall product forward including CQRS, IoC conversion, and enterprise service bus
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Build and maintain technical road-map to ensure best practices and implement modern cost-effective solutions
-                        </li>
-                        <li>
-                            Triage corporate-wide departmental requests for necessity and priority to increase team efficiency
-                        </li>
-                        <li>
-                            Act as pre-sales engineer for potential clients, providing data analytics, product demonstration setups, and documentation
-                            of functionality
-                        </li>
-                        <li>
-                            Supervise three team members, conducting weekly one-on-one meetings, providing formal feedback, and preparing yearly performance
-                            reviews
-                        </li>
-                        <li>
-                            Maintain responsibilities from previous role as senior software developer
-                        </li>
-                    </ul>
-                </responsibilities>
+      <subsection>
+        <roles>
+          <role
+            >Senior Software Engineer I
+            <dates>(October 2018 - Present)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>Craft secure, performant, cross-platform browser-based applications for both customers and internal Auth0 teams.</li>
+              <li>Follow code and security best practices for implementation of front end and back end code for identity as a service.</li>
+              <li>Work closely with Product and Design to determine and optimize user experience and information architecture.</li>
+              <li>Be a part of the team's on-call rotations.</li>
+              <li>Evaluate new technologies and techniques to improve overall practices.</li>
+            </ul>
+          </responsibilities>
+        </roles>
 
-                <role>Senior Software Developer
-                    <dates>(August 2014 - September 2016)</dates>
-                </role>
+        <company>
+          <name>Auth0</name>
+          <location>Bellevue, WA</location>
+          <overalldates>October 2018 - Present</overalldates>
+        </company>
+      </subsection>
 
-                <role>Software Developer
-                    <dates>(July 2013 - August 2014)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Created, implemented, and structured user interface and backend components for new platform based on C#.net, angular (1.X),
-                            and Bootstrap
-                        </li>
-                        <li>
-                            Focused on front-end angular and C# controllers, to push projects into present technologies, using expertise gathered through
-                            previous experience and professional determination
-                        </li>
-                        <li>
-                            Transitioned applications from client/server to single page application (Angular 1.X) while trialing different model view controller frameworks for JavaScript
-                        </li>
-                        <li>
-                            Actively participated in application architectural discussions, decisions, prototyping, and implementation of changes
-                        </li>
-                    </ul>
-                </responsibilities>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Technical Development Lead &amp; Software Architect
+            <dates>(September 2016 - August 2018)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Successfully collaborated with Hallmark teams to coordinate
+                understanding and efforts on major initiatives including:
+                <ul class="no-print">
+                  <li>
+                    Implemented an analytics package to improve understanding of
+                    application usage
+                  </li>
+                  <li>
+                    Automated build and deployment processes, including code
+                    quality metrics
+                  </li>
+                  <li>
+                    Simplified applications into deployable
+                    micro-services to significantly minimize downtime
+                  </li>
+                  <li>
+                    Implemented a new source control branch strategy to
+                    increase developer productivity
+                  </li>
+                  <li>
+                    Designed a code review process to improve code quality
+                    and outcomes
+                  </li>
+                  <li>
+                    Lead multiple multi-sprint technical projects to move the
+                    overall product forward including CQRS, IoC conversion, and
+                    enterprise service bus
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Built and maintained a technical road-map to ensure best practices
+                and implement modern cost-effective solutions
+              </li>
+              <li>
+                Triaged corporate-wide departmental requests for necessity and
+                priority to increase team efficiency
+              </li>
+              <li>
+                Acted as pre-sales engineer for potential clients, providing data
+                analytics, product demonstration setups, and documentation of
+                functionality
+              </li>
+              <li>
+                Supervised three team members, conducting weekly one-on-one
+                meetings, providing formal feedback, and preparing yearly
+                performance reviews
+              </li>
+              <li>
+                Maintained responsibilities from previous role as senior software
+                developer
+              </li>
+            </ul>
+          </responsibilities>
 
-            <company>
-                <name>Hallmark Business Connections</name>
-                <location>Minneapolis, MN</location>
-                <overalldates>July 2013 - August 2018</overalldates>
-            </company>
-        </subsection>
-        
-        <subsection>
-            <roles>
-                <role>Web Developer
-                    <dates>(September 2013 – January 2018)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Build and maintain technician scheduling and tracking system in PHP
-                        </li>
-                        <li>
-                            Redesign and develop call center to integrate it with pre-existing scheduling system and the Twilio API
-                        </li>
-                    </ul>
-                </responsibilities>
+          <role
+            >Senior Software Developer
+            <dates>(August 2014 - September 2016)</dates>
+          </role>
 
+          <role
+            >Software Developer
+            <dates>(July 2013 - August 2014)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Created, implemented, and structured user interface and backend
+                components for new platform based on C#.net, angular (1.X), and
+                Bootstrap
+              </li>
+              <li>
+                Focused on front-end angular and C# controllers, to push
+                projects into present technologies, using expertise gathered
+                through previous experience and professional determination
+              </li>
+              <li>
+                Transitioned applications from client/server to single page
+                application (Angular 1.X) while trialing different model view
+                controller frameworks for JavaScript
+              </li>
+              <li>
+                Actively participated in application architectural discussions,
+                decisions, prototyping, and implementation of changes
+              </li>
+            </ul>
+          </responsibilities>
+        </roles>
 
-                <role>Computer Repair Technician
-                    <dates>(July 2009 – May 2011)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Repaired and constructed computers
-                        </li>
-                        <li>
-                            Consulted customers on computer usage
-                        </li>
-                    </ul>
-                </responsibilities>
-            </roles>
+        <company>
+          <name>Hallmark Business Connections</name>
+          <location>Minneapolis, MN</location>
+          <overalldates>July 2013 - August 2018</overalldates>
+        </company>
+      </subsection>
 
-            <company>
-                <name>Field Advantage, LLC</name>
-                <location>Norfolk, VA</location>
-                <overalldates>July 2009 - January 2018</overalldates>
-            </company>
-        </subsection>
+      <subsection>
+        <roles>
+          <role
+            >Web Developer
+            <dates>(September 2013 – January 2018)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Build and maintain technician scheduling and tracking system in
+                PHP
+              </li>
+              <li>
+                Redesign and develop call center to integrate it with
+                pre-existing scheduling system and the Twilio API
+              </li>
+            </ul>
+          </responsibilities>
 
-        <subsection>
-            <roles>
-                <role>Software Engineer
-                    <dates>(November 2011 – June 2013)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Worked on a team to develop a patient self-service portal software for global deployments to medical centers
-                        </li>
-                        <li>
-                            Deployed and supported applications for patient check-in kiosks at over 135 VA Medical Centers and Department of Defense
-                            sites
-                        </li>
-                        <li>
-                            Interviewed potential software engineer and software intern candidates
-                        </li>
-                        <li>
-                            Mentored less experienced software engineer and software interns
-                        </li>
-                    </ul>
-                </responsibilities>
-            </roles>
+          <role
+            >Computer Repair Technician
+            <dates>(July 2009 – May 2011)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>Repaired and constructed computers</li>
+              <li>Consulted customers on computer usage</li>
+            </ul>
+          </responsibilities>
+        </roles>
 
-            <company>
-                <name>Vecna Technologies</name>
-                <location>Cambridge, MA</location>
-                <overalldates>November 2011 – June 2013</overalldates>
-            </company>
-        </subsection>
+        <company>
+          <name>Field Advantage, LLC</name>
+          <location>Norfolk, VA</location>
+          <overalldates>July 2009 - January 2018</overalldates>
+        </company>
+      </subsection>
 
-        <subsection>
-            <roles>
-                <role>Chief Mobile Engineer
-                    <dates>(May 2011 – November 2011)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>
-                            Developed an environment-aware application to promote safe driving
-                        </li>
-                        <li>
-                            Deployed and supported applications in Android, Blackberry, and iOS platforms
-                        </li>
-                        <li>
-                            Acted as a technical resource for potential clients and stakeholders
-                        </li>
-                    </ul>
-                </responsibilities>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Software Engineer
+            <dates>(November 2011 – June 2013)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Worked on a team to develop a patient self-service portal
+                software for global deployments to medical centers
+              </li>
+              <li>
+                Deployed and supported applications for patient check-in kiosks
+                at over 135 VA Medical Centers and Department of Defense sites
+              </li>
+              <li>
+                Interviewed potential software engineer and software intern
+                candidates
+              </li>
+              <li>
+                Mentored less experienced software engineer and software interns
+              </li>
+            </ul>
+          </responsibilities>
+        </roles>
 
-            <company>
-                <name>Illume Software, Inc.</name>
-                <location>Newton, MA</location>
-                <overalldates>May 2011 – November 2011</overalldates>
-            </company>
-        </subsection>
+        <company>
+          <name>Vecna Technologies</name>
+          <location>Cambridge, MA</location>
+          <overalldates>November 2011 – June 2013</overalldates>
+        </company>
+      </subsection>
 
+      <subsection>
+        <roles>
+          <role
+            >Chief Mobile Engineer
+            <dates>(May 2011 – November 2011)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Developed an environment-aware application to promote safe
+                driving
+              </li>
+              <li>
+                Deployed and supported applications in Android, Blackberry, and
+                iOS platforms
+              </li>
+              <li>
+                Acted as a technical resource for potential clients and
+                stakeholders
+              </li>
+            </ul>
+          </responsibilities>
+        </roles>
 
-        <subsection>
-            <roles>
-                <role>Chief Technology Officer &amp; Co-Founder
-                    <dates>(July 2010 – January 2012)</dates>
-                </role>
-                <responsibilities>
-                    <ul>
-                        <li>Designed and developed a location-based coupon application targeted to university students and
-                            campuses
-                        </li>
-                        <li>
-                            Hired, coordinated, mentored, and managed a development team
-                        </li>
-                        <li>
-                            Combined technical and business ideas to create and deliver an economically sound application for Android and iOS devices
-                            with a PHP server interface
-                        </li>
-                    </ul>
-                </responsibilities>
-            </roles>
+        <company>
+          <name>Illume Software, Inc.</name>
+          <location>Newton, MA</location>
+          <overalldates>May 2011 – November 2011</overalldates>
+        </company>
+      </subsection>
 
-            <company>
-                <name>ByME, LLC</name>
-                <location>Minneapolis, MN</location>
-                <overalldates>July 2010 – January 2012</overalldates>
-            </company>
-        </subsection>
+      <subsection>
+        <roles>
+          <role
+            >Chief Technology Officer &amp; Co-Founder
+            <dates>(July 2010 – January 2012)</dates>
+          </role>
+          <responsibilities>
+            <ul>
+              <li>
+                Designed and developed a location-based coupon application
+                targeted to university students and campuses
+              </li>
+              <li>
+                Hired, coordinated, mentored, and managed a development team
+              </li>
+              <li>
+                Combined technical and business ideas to create and deliver an
+                economically sound application for Android and iOS devices with
+                a PHP server interface
+              </li>
+            </ul>
+          </responsibilities>
+        </roles>
+
+        <company>
+          <name>ByME, LLC</name>
+          <location>Minneapolis, MN</location>
+          <overalldates>July 2010 – January 2012</overalldates>
+        </company>
+      </subsection>
     </section>
 
     <section>
-        <divider class="flex border-top border-bottom background-lighter-gray text-gray text-medium">
-            Education
-        </divider>
+      <divider
+        class="
+          flex
+          border-top border-bottom
+          background-lighter-gray
+          text-gray text-medium
+        "
+      >
+        Education
+      </divider>
 
-        <subsection>
-            <roles>
-                <role>Bachelor of Science
-                    <dates>(September 2007 – May 2011)</dates>
-                </role>
-                <i>Computer Information Systems</i>
-                <strong>Concentration: Software Engineering</strong>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Bachelor of Science
+            <dates>(September 2007 – May 2011)</dates>
+          </role>
+          <i>Computer Information Systems</i>
+          <strong>Concentration: Software Engineering</strong>
+        </roles>
 
-            <company>
-                <name>The College of St. Scholastica</name>
-                <location>Duluth, MN</location>
-            </company>
-        </subsection>
+        <company>
+          <name>The College of St. Scholastica</name>
+          <location>Duluth, MN</location>
+        </company>
+      </subsection>
     </section>
 
     <section>
-        <divider class="flex border-top border-bottom background-lighter-gray text-gray text-medium">
-            Awards &amp; Achievements
-        </divider>
+      <divider
+        class="
+          flex
+          border-top border-bottom
+          background-lighter-gray
+          text-gray text-medium
+        "
+      >
+        Awards &amp; Achievements
+      </divider>
 
-        <subsection>
-            <roles>
-                <role>Crowning Achievement
-                    <dates>(March 2015)</dates>
-                </role>
-                <role>Above &amp; Beyond
-                    <dates>(July 2013 - Present)</dates>
-                </role>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Crowning Achievement
+            <dates>(March 2015)</dates>
+          </role>
+          <role
+            >Above &amp; Beyond
+            <dates>(July 2013 - Present)</dates>
+          </role>
+        </roles>
 
-            <company>
-                <name>Hallmark Business Connections</name>
-                <location>Minneapolis, MN</location>
-            </company>
-        </subsection>
+        <company>
+          <name>Hallmark Business Connections</name>
+          <location>Minneapolis, MN</location>
+        </company>
+      </subsection>
     </section>
 
     <section>
-        <divider class="flex border-top border-bottom background-lighter-gray text-gray text-medium">
-            Affiliations &amp; Interests
-        </divider>
+      <divider
+        class="
+          flex
+          border-top border-bottom
+          background-lighter-gray
+          text-gray text-medium
+        "
+      >
+        Affiliations &amp; Interests
+      </divider>
 
-        <subsection>
-            <roles>
-                <role>Co-Chair
-                    <dates>(May 2015 – May 2016)</dates>
-                </role>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Co-Chair
+            <dates>(May 2015 – May 2016)</dates>
+          </role>
+        </roles>
 
-            <company>
-                <name>HBC Supporting United Way</name>
-                <location>Minneapolis, MN</location>
-            </company>
-        </subsection>
-        <subsection>
-            <roles>
-                <role>Volunteer Software Engineer
-                    <dates>(November 2011 – June 2013)</dates>
-                </role>
-            </roles>
+        <company>
+          <name>HBC Supporting United Way</name>
+          <location>Minneapolis, MN</location>
+        </company>
+      </subsection>
+      <subsection>
+        <roles>
+          <role
+            >Volunteer Software Engineer
+            <dates>(November 2011 – June 2013)</dates>
+          </role>
+        </roles>
 
-            <company>
-                <name>Vecna Cares</name>
-                <location>Cambridge, MA</location>
-            </company>
-        </subsection>
+        <company>
+          <name>Vecna Cares</name>
+          <location>Cambridge, MA</location>
+        </company>
+      </subsection>
 
-        <subsection>
-            <roles>
-                <role>President
-                    <dates>(September 2009 – May 2011)</dates>
-                </role>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >President
+            <dates>(September 2009 – May 2011)</dates>
+          </role>
+        </roles>
 
-            <company>
-                <name>St. Scholastica Computer Club</name>
-                <location>Duluth, MN</location>
-            </company>
-        </subsection>
+        <company>
+          <name>St. Scholastica Computer Club</name>
+          <location>Duluth, MN</location>
+        </company>
+      </subsection>
 
-        <subsection>
-            <roles>
-                <role>Co-Founder &amp; Repair Technician
-                    <dates>(September 2007 – May 2011)</dates>
-                </role>
-            </roles>
+      <subsection>
+        <roles>
+          <role
+            >Co-Founder &amp; Repair Technician
+            <dates>(September 2007 – May 2011)</dates>
+          </role>
+        </roles>
 
-            <company>
-                <name>Campus Freelancer Repair</name>
-                <location>Duluth, MN</location>
-            </company>
-        </subsection>
+        <company>
+          <name>Campus Freelancer Repair</name>
+          <location>Duluth, MN</location>
+        </company>
+      </subsection>
 
-        <subsection>
-            <roles>
-                <role>Interests:
-                    <dates>Dogs, Recreational Sports (Soccer, Triathlon, Broomball), Mechanics, Gardening, Woodworking, Family</dates>
-                </role>
-            </roles>
-        </subsection>
+      <subsection>
+        <roles>
+          <role
+            >Interests:
+            <dates
+              >Dogs, Recreational Sports (Soccer, Triathlon, Broomball),
+              Mechanics, Gardening, Woodworking, Family</dates
+            >
+          </role>
+        </roles>
+      </subsection>
     </section>
 
-    <a class="download-clicker no-link no-print" href="Erickson_Matthew_ME.pdf" download="Erickson_Matthew_ME.pdf">
-        <i class="material-icons text-light-gray">file_download</i>
+    <a
+      class="download-clicker no-link no-print"
+      href="Erickson_Matthew_ME.pdf"
+      download="Erickson_Matthew_ME.pdf"
+    >
+      <i class="material-icons text-light-gray">file_download</i>
     </a>
-</body>
-
+  </body>
 </html>
